@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy source folder &apos;resources&apos; to &apos;TeaCoffeeVendingMachineSimulator&apos;&#x0D;&#x0A;- Original project: &apos;JunitAssignment&apos;&#x0D;&#x0A;- Destination element: &apos;TeaCoffeeVendingMachineSimulator&apos;&#x0D;&#x0A;- Original element: &apos;JunitAssignment/resources&apos;" description="Copy source folder" destination="=TeaCoffeeVendingMachineSimulator" element1="/resources" flags="6" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyRoots" roots="1" stamp="1560228722755" version="1.0"/>
+</session>

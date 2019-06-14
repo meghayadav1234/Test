@@ -1,0 +1,72 @@
+package com.yash;
+
+public class ContainerMaterialDTO {
+
+	private Integer tea;
+
+	private Integer coffee;
+
+	private Integer sugar;
+
+	private Integer water;
+
+	private Integer milk;
+
+	public ContainerMaterialDTO(Integer tea, Integer coffee, Integer sugar, Integer water, Integer milk) {
+		super();
+		this.tea = tea;
+		this.coffee = coffee;
+		this.sugar = sugar;
+		this.water = water;
+		this.milk = milk;
+	}
+
+	public ContainerMaterialDTO() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void setTea(Integer tea) {
+		this.tea = tea;
+	}
+
+	public void setCoffee(Integer coffee) {
+		this.coffee = coffee;
+	}
+
+	public void setSugar(Integer sugar) {
+		this.sugar = sugar;
+	}
+
+	public void setWater(Integer water) {
+		this.water = water;
+	}
+
+	public void setMilk(Integer milk) {
+		this.milk = milk;
+	}
+
+	public Integer getTea() {
+		return tea;
+	}
+
+	public Integer getCoffee() {
+		return coffee;
+	}
+
+	public Integer getSugar() {
+		return sugar;
+	}
+
+	public Integer getWater() {
+		return water;
+	}
+
+	public Integer getMilk() {
+		return milk;
+	}
+
+
+
+
+
+}

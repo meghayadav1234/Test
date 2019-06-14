@@ -1,0 +1,48 @@
+package assignment.junit.com.yash.training;
+
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.runners.MockitoJUnitRunner;
+
+import assignment.junit.com.yash.training.exception.DifferentCurrenciesException;
+import assignment.junit.com.yash.training.model.ClientBO;
+import assignment.junit.com.yash.training.model.Currency;
+import assignment.junit.com.yash.training.model.Product;
+import assignment.junit.com.yash.training.model.ProductType;
+
+@RunWith(MockitoJUnitRunner.class) 
+public class ClientBOImplTest {
+	
+	@InjectMocks 
+	private ClientBO clientBO;
+	
+	/*@Mock
+	private Product product;
+	*/
+	
+	ProductImpl product,productOne,productTwo;
+	
+	List<Product> products;
+	@Before
+	public void setUp(){
+		products = new ArrayList<Product>();
+		productOne = new ProductImpl(1, "Megha", ProductType.BANK_GUARANTEE, new AmountImpl(BigDecimal.ZERO, Currency.EURO));
+		productTwo = new ProductImpl(2, "Priya", ProductType.LOAN, new AmountImpl(BigDecimal.ZERO, Currency.EURO));
+	}
+
+	@Test
+	public void getClientProductSum() throws DifferentCurrenciesException{
+		clientBO.getClientProductsSum(products);
+		
+	}
+	
+	
+	
+
+}

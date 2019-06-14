@@ -1,0 +1,38 @@
+package assignment.junit.com.yash.training;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
+
+import assignment.junit.com.yash.training.model.ClientBO;
+import assignment.junit.com.yash.training.model.Product;
+
+@RunWith(MockitoJUnitRunner.class) 
+public class ClientBOImplTest {
+	
+	@InjectMocks 
+	private ClientBO clientBO;
+	
+	@Mock
+	private Product product;
+	
+	@Test
+	public void getClientProductSum(){
+		assertEquals(0l, product.getId());
+		assertEquals(0, demo.getInteger().intValue());
+		assertEquals(0d, demo.getDouble(), 0d);
+		assertFalse(demo.getBoolean());
+		assertNull(demo.getObject());
+		assertEquals(Collections.emptyList(), demo.getCollection());
+		assertNull(demo.getArray());
+		assertEquals(0L, demo.getStream().count());
+		assertFalse(demo.getOptional().isPresent());
+		
+	}
+	
+	
+	
+
+}

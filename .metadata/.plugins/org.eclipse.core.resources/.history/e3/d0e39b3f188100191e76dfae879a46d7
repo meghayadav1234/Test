@@ -1,0 +1,46 @@
+package assignment.junit.com.yash.training;
+
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.when;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.runners.MockitoJUnitRunner;
+
+import assignment.junit.com.yash.training.model.Amount;
+import assignment.junit.com.yash.training.model.ClientBO;
+import assignment.junit.com.yash.training.model.Currency;
+import assignment.junit.com.yash.training.model.Product;
+
+@RunWith(MockitoJUnitRunner.class) 
+public class ClientBOImplTest {
+	
+	@InjectMocks 
+	private ClientBO clientBO;
+	
+	/*@Mock
+	private Product product;
+	*/
+	
+	ProductImpl product;
+	@Before
+	public void setUp(){
+		product = new ProductImpl(1, "w", null, new AmountImpl(null, null));
+		
+	}
+
+	@Test
+	public void getClientProductSum(){
+		
+	}
+	
+	
+	
+
+}

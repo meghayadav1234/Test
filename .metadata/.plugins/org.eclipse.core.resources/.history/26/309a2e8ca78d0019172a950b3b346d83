@@ -1,0 +1,12 @@
+package com.yash;
+
+import com.yash.TeaCoffeeVendingMachineMenu;
+
+public class TeaCoffeeVendingMachineSimulator {
+
+	public static void main(String[] args) {
+
+		TeaCoffeeVendingMachineMenu teaCoffeeVendingMachineMenu = new TeaCoffeeVendingMachineMenu();
+		teaCoffeeVendingMachineMenu.DisplayMenuForTeaCoffeeVendingMachine(true);
+	}
+}
